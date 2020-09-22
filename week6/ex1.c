@@ -11,6 +11,7 @@ void swap(int* a, int* b)
 }
 
 
+// sorts the two-dimensional array with 3 columns relative to the 1st column 
 void sort(int n, int** array)
 {
 	for (int i = 0; i < n; i++) {
@@ -35,7 +36,8 @@ void sort(int n, int** array)
 int main()
 {
 	int n; // number of processes
-	int** processes; // array of n triples(process_index, arrival_time, burst_time)
+	int** processes; // two-dimensional array of n triples: 
+					 // [process_index, arrival_time, burst_time]
 
 	printf("Enter number of processes: ");
 	scanf("%d", &n);
@@ -80,6 +82,7 @@ int main()
 		}
 
 		current_time += processes[i][2]; // completion time of i-th process (in array)
+		
 		int proccess_index = processes[i][0];
 		int ct = current_time;
 		int tat = ct - processes[i][1];
@@ -91,14 +94,14 @@ int main()
 	}
 
 
-	// print the result array
+	// print the result array (CT, TAT, WT for each process)
 	printf("\tCT\tTAT\tWT\n");
 	for (int i = 0; i < n; i++) {
 		printf("P%d:\t%d\t%d\t%d\n", i, result[i][0], result[i][1], result[i][2]);
 	}
 
-	double avg_tat = 0;
-	double avg_wt = 0;
+	double avg_tat = 0; // average Turn Around Time
+	double avg_wt = 0;  // average Waiting Time
 
 	for (int i = 0; i < n; i++) {
 		avg_tat += result[i][1];
