@@ -13,7 +13,7 @@ void swap(int* a, int* b)
 }
 
 
-// sorts the two-dimensional array with 3 columns relative to the 1st column 
+// sorts the two-dimensional array with 3 columns by the 1st column 
 void sort(int n, int** array)
 {
 	for (int i = 0; i < n; i++) {
@@ -64,7 +64,7 @@ int main()
 	}
 
 
-	// sort the array relative to arrival time
+	// sort the array by the arrival time
 	sort(n, processes);
 
 
