@@ -13,7 +13,7 @@ void swap(int* a, int* b)
 }
 
 
-// sorts the two-dimensional array with 3 columns relative to the 2nd column 
+// sorts the two-dimensional array with 3 columns by the 2nd column 
 void sort(int n, int** array)
 {
 	for (int i = 0; i < n; i++) {
@@ -65,7 +65,7 @@ int main()
 	}
 
 
-	// sort the array relative to the burst time
+	// sort the array by the burst time
 	sort(n, processes);
 
 
