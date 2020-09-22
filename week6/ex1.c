@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
+// First Come First Served scheduling algorithm
+
 
 void swap(int* a, int* b)
 {
@@ -82,7 +84,7 @@ int main()
 		}
 
 		current_time += processes[i][2]; // completion time of i-th process (in array)
-		
+
 		int proccess_index = processes[i][0];
 		int ct = current_time;
 		int tat = ct - processes[i][1];
