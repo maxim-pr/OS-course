@@ -1,0 +1,4 @@
+Since a virtual address is of length 16 bit, then the overall virtual address space is of size 2^16 bit = 8 Kb = 64 KiB
+
+According to page size is 8 Kb, then the number of pages is 1.
+If it was meant 8 KiB, then the number of pages is 64 / 8 = 8.

@@ -1,0 +1,2 @@
+Physical memory is the actual RAM of the computer, while virtual memory is an an abstraction that gives the programmer the illusion of having infinite memory in his system. 
+When more memory is required for the process than is available in RAM, the disk is used as some kind of  backup. The needed data is loaded into memory from the disk, and the least recently used frame data is moved to disk. This can go on forever, and because disk space is large, it creates the illusion of unlimited memory.
