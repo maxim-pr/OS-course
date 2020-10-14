@@ -1,0 +1,1 @@
+The more repeated same memory references, the greater hit rate.
