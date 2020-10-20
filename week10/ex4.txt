@@ -1,0 +1,12 @@
+Current file: link1
+Numer of links: 2
+Links:
+/home/maxim/repos/OS-course/week10/temp/link1
+/home/maxim/repos/OS-course/week10/temp/file1
+
+Current file: file1
+Numer of links: 2
+Links:
+/home/maxim/repos/OS-course/week10/temp/link1
+/home/maxim/repos/OS-course/week10/temp/file1
+

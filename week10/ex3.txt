@@ -1,0 +1,15 @@
+-rw-rw-r-- 1 maxim maxim 0 окт 20 15:25 _ex3.txt
+-rwxrw-r-- 1 maxim maxim 0 окт 20 15:25 _ex3.txt
+-rwxrw-rwx 1 maxim maxim 0 окт 20 15:25 _ex3.txt
+-rwxrwxrwx 1 maxim maxim 0 окт 20 15:25 _ex3.txt
+
+0 = no permission
+1 = execute
+2 = write 
+4 = read
+
+When we want to give permissions, we just sum needed numbers.
+Hence:
+660 means rw- for owner, rw- for group, and no permission for others;
+775 means rwx for owner, rwx for group, and r-x for others;
+777 means rwx for all

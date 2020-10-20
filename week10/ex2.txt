@@ -1,0 +1,3 @@
+1124897 ../week1/file.txt
+/home/maxim/repos/OS-course/week10/_ex2.txt
+/home/maxim/repos/OS-course/week1/file.txt
