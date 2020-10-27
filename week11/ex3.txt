@@ -1,0 +1,3 @@
+In the first program, when a process is forked, child process gets the same address space as the parent one, including the buffer. So, when both processes reach the instruction "printf("\n")", they both print "Hello" to console (since stdout has line buffering).
+
+In the second program, the initial process prints "Hello\n" and when it is forked, its buffer is empty (since stdout has line buffering), so child process also gets empty buffer (as the address space is copied). Then both processes print '\n'.
