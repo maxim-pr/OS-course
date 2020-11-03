@@ -1,0 +1,67 @@
+DBUF_SIZE=1
+real	0m0,012s
+user	0m0,003s
+sys	0m0,003s
+
+DBUF_SIZE=2
+real	0m0,013s
+user	0m0,000s
+sys	0m0,005s
+
+DBUF_SIZE=4
+real	0m0,002s
+user	0m0,000s
+sys	0m0,002s
+
+DBUF_SIZE=8
+real	0m0,002s
+user	0m0,002s
+sys	0m0,000s
+
+DBUF_SIZE=16
+real	0m0,002s
+user	0m0,001s
+sys	0m0,000s
+
+DBUF_SIZE=32
+real	0m0,002s
+user	0m0,001s
+sys	0m0,000s
+
+Having too little buffer size (1 or 2 bytes) decreases time consumption of the program
+
+
+With -DSYNC:
+
+DBUF_SIZE=1
+real	0m1,640s
+user	0m0,000s
+sys	0m0,259s
+
+DBUF_SIZE=2
+real	0m1,024s
+user	0m0,000s
+sys	0m0,166s
+
+DBUF_SIZE=4
+real	0m0,514s
+user	0m0,007s
+sys	0m0,071s
+
+DBUF_SIZE=8
+real	0m0,352s
+user	0m0,000s
+sys	0m0,054s
+
+DBUF_SIZE=16
+real	0m0,158s
+user	0m0,000s
+sys	0m0,025s
+
+DBUF_SIZE=32
+real	0m0,091s
+user	0m0,001s
+sys	0m0,013s
+
+With -DSYNC flag, the same, the less the buffer size, the more time consumption is. 
+But with this flag, the time consumption is much greater than without it.
