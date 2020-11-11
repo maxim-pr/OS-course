@@ -1,0 +1,10 @@
+Deadlock prevention in case it was implemented, would eliminate deadlocks completely, they wouldn't be able to happen (because of breaking neccessary condition), 
+so there will no need to waste time and CPU for any checks or attempts to avoide them. However it will lead to less performance and CPU utilization due to this sacrificing. 
+It will probably be not worth it because of rarity of deadlocks.
+
+Deadlock avoidance on the other hand requires to know what resources future resource requests, i.e. 
+every process has to tell in advance the maximum number of resources of each type that it may need. So everytime OS will need to analyze the current state, 
+which may create an overhead, and as a consequence can block processes for too long.
+
+Detection and recovery method means letting deadlocks occur, identifiying them and taking proper actions. 
+It needs to be invoked periodically to test for deadlock and does not need to know all the details of all resources in existence, available and requested.
